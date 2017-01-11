@@ -1,0 +1,149 @@
+body {
+    background-color: #fff;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    font-weight: 400;
+    min-width: 1200px;
+    margin: 0 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a, a:link, a:visited, a:hover {
+    text-decoration: none;
+}
+
+#header {
+    background-color: #455A64;
+    font-size: 18px;
+    height: 200px;
+    /*width: 2000px;*/
+    overflow: hidden;
+    /*background-image:url('../images/banner.jpg');*/
+}
+
+.nav {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#head-logo {
+    margin: 4px 0;
+    float: left;
+}
+
+#headbar {
+    float: right;
+    margin: 14px 0;
+}
+
+.rfloat {
+    float: right;
+}
+
+.lfloat {
+    float: left;
+}
+
+#login, #register {
+    margin-left: 10px;
+    color: #777;
+    border: 0;
+}
+
+#menubar {
+    margin: 0 auto;
+    background: #25aa99;
+    overflow: hidden;
+    font-size: 18px;
+    height: 56px;
+    width: 1200px;
+    line-height: 56px;
+}
+
+.bar {
+    float: left;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    border: #20bb99 solid 1px;
+}
+
+._bar {
+    float: left;
+    width: 200px;
+    text-align: center;
+    color: #25aa99;
+    border: #20bb99 solid 1px;
+    background-color: #fff;
+}
+
+.carouselFig {
+    height: 210px;
+    margin: 30px 0;
+}
+
+.carousel-foot {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.carousel-slider {
+    margin-top: 50%;
+    margin-bottom: -45px;
+}
+
+.carouselbar {
+    padding: 20px 50px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #0f0f11;
+}
+a.news {
+    color:black;
+}
+a.news:hover {
+    color:red;
+}
+
+.news {
+    line-height: 60px;
+}
+
+.module {
+    width: 396px;
+    height: 260px;
+    margin: 6px 0;
+    list-style: none;
+    background-color: #cdcdcd;
+}
+
+.mid {
+    margin: 6px 6px;
+}
+
+#foot-bottom {
+    background-color: #0f0f11;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #cdcdcd;
+    font-size: small;
+    line-height: 48px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}

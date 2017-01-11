@@ -1,14 +1,111 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title></title>
-</head>
+    <meta charset="UTF-8">
 
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="../static/css/index.css" rel="stylesheet" type="text/css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/index.js"></script>
+    <title>GeekBBS</title>
+</head>
 <body>
-<h1>welcome {{username}} !</h1>
-<br>
-<a href="../logout">退出</a>
+<div id="header">
+    <div class="nav row">
+        <div id="head-logo">
+            <img src="../static/images/cdslogo.png" alt="GeekBBS"/>
+        </div>
+        <div id="headbar">
+            <a href="#" id="register" class="btn btn-default btn-sm rfloat" role="button">免费注册</a>
+            <a href="#" id="login" class="btn btn-default btn-sm rfloat" role="button">登录</a>
+            <div style="width:200px;float: right">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="search"/>
+                    <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span
+                                    class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+        </div>
+    </div>
+</div>
+
+<div class="nav">
+    <div id="menubar">
+        <a href="#" class="bar">C/C++</a>
+        <a href="#" class="bar">Java</a>
+        <a href="#" class="bar">Python</a>
+        <a href="#" class="bar">JavaScript</a>
+        <a href="#" class="bar">Android</a>
+        <a href="#" class="bar">ios</a>
+    </div>
+
+    <div class="carouselFig clearfix">
+        <div id="myCarousel" class="carousel slide lfloat" style="width:700px;">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators carousel-foot">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="../static/images/demo1.jpg" alt="First slide">
+                    <div class="carousel-caption">标题 1</div>
+                </div>
+                <div class="item">
+                    <img src="../static/images/demo2.jpg" alt="Second slide">
+                    <div class="carousel-caption">标题 2</div>
+                </div>
+                <div class="item">
+                    <img src="../static/images/demo3.jpg" alt="Third slide">
+                    <div class="carousel-caption">标题 3</div>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel"
+               data-slide="prev"><img class="carousel-slider" src="../static/images/prev.gif"/>
+            </a>
+            <a class="carousel-control right" href="#myCarousel"
+               data-slide="next"><img class="carousel-slider" src="../static/images/next.gif"/>
+            </a>
+        </div>
+        <div class="rfloat carouselbar" style="width:500px;">
+            <ul>
+                <li><a class="news" href="#">11111111111</a></li>
+                <li><a class="news" href="#">22222222222</a></li>
+                <li><a class="news" href="#">33333333333</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix">
+        <ul>
+            <li class="module lfloat">
+                <div></div>
+            </li>
+            <li class="module lfloat mid">
+                <div></div>
+            </li>
+            <li class="module rfloat">
+                <div></div>
+            </li>
+            <li class="module lfloat">
+                <div></div>
+            </li>
+            <li class="module lfloat mid">
+                <div></div>
+            </li>
+            <li class="module rfloat">
+                <div></div>
+            </li>
+        </ul>
+    </div>
+</div>
+<pre id="foot-bottom">
+</pre>
 </body>
 </html>

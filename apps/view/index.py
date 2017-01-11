@@ -11,5 +11,4 @@ logger = logging.getLogger(__name__)
 
 #登陆成功
 def index(req):
-    username = req.COOKIES.get('username','')
-    return render_to_response('index.html' ,{'username':username})
+    return render_to_response('index.html' )
