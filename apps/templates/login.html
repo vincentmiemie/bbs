@@ -1,0 +1,54 @@
+{#{% extends "login.html" %}#}
+{% load staticfiles %}
+{% block title %}bbs{% endblock %}
+{% block extrastyle %}
+    {#    <link rel="stylesheet" href="{% static "js/jquery.ui/jquery-ui.css" %}" type="text/css">#}
+    {#    <link rel="stylesheet" href="{% static "js/laydate/skins/molv/laydate.css" %}" type="text/css">#}
+    {#    <style>#}
+    {#        .page_list thead th{text-align: center; font-weight: bold;}#}
+    {#        .text_center{text-align: center;}#}
+    {#    </style>#}
+{% endblock %}
+{% block extrahead %}{% endblock %}
+{% block blockbots %}{% endblock %}
+{% block breadcrumb %}
+    <li><a href="{% url 'index' %}">首页</a></li>
+    <li class="active">登陆</li>
+{% endblock %}
+{% block content %}
+{% if messages %}{% for message in messages %}<h4 style="float: right;color:#ff8375;">{{ message }}</h4>{% endfor %}{% endif %}
+
+    <div class="modal-body">
+        <form method="post" action="{% url 'login' %}">
+            {% csrf_token %}
+            <table class="table table-bordered" id="login">
+                <tr>
+                    <td width='15%%'>用户名</td>
+                    <td width='85%%'><input type="text" name="name" required="required" maxlength="36"
+                                            style="width:300px" placeholder="最多输入10字符"/></td>
+                </tr>
+                <tr>
+                    <td width='15%%'>密码</td>
+                    <td width='85%%'><input type="password" name="password" required="required" maxlength="36"
+                                            style="width:300px" placeholder="最多输入30字符"/></td>
+                </tr>
+            </table>
+            <div style="text-align: right;float: left">
+                <button class="btn btn-primary" type="submit">确定</button>
+                <a href="../regist" class="btn btn-primary">注册</a>
+            </div>
+        </form>
+
+    </div>
+
+{% endblock %}
+{% block active_li %}home{% endblock %}
+{% block extrascript %}
+    <script type="text/javascript">
+
+    </script>
+{% endblock %}
+
+
+</body>
+</html>
